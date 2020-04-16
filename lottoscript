@@ -1,0 +1,15 @@
+import random
+a = int(input("Please enter number: "))
+b = int(input("Please enter number: "))
+c = int(input("Please enter number: "))
+
+# num = range(1, 50)
+lotto = random.randint(1, 50)
+entries = [a, b, c]
+for spot in entries:
+    if spot == lotto:
+        print("You won")
+        break
+    else:
+        print("you lost")
+
